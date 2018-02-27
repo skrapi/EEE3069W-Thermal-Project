@@ -13,6 +13,7 @@ with open(file) as csvfile:
     for row in readCSV:
         try:
             t = float(row[0])
+            
             i = float(row[2])
             o = float(row[1])
             time.append(t)
@@ -63,4 +64,5 @@ for j in range(len(indices)):
             writeCSV.writerow(row)
 
     writefile.close()
+
 
